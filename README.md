@@ -1,5 +1,7 @@
 # 내 인생에 전세 사기는 없다 — AI 기반 전세사기 사전 예방 스캠 탐지 서비스
 
+📌 **정식 프로젝트명**: (상위10%) 피싱·스캠 예방을 위한 서비스 개발 경진대회_전세 사기 탐지 리스크 서비스
+
 > 팀 은비비빅 | 데이터 유니버스 x 데이콘
   데이콘 대시보드 상위 10%
 
@@ -342,8 +344,8 @@ def generate_pdf_report(inputs, resA, resB, zone_name, zone_desc, a_grade, b_gra
 
 ## Appendix — 프로젝트 산출물
 
-- 발표자료(PDF): `전세사기 리스크 탐지 서비스.pdf` (64p)
-- 실제 생성 리포트 샘플: `전세위험도평가보고서_20260210_195647.pdf`
-- Track A 코드: `track_A/MD1/헤도닉 모델.ipynb`, `track_A/MD2/WoE_로지스틱_최종.ipynb`, `경매라벨링.ipynb`, `파생변수_생성.ipynb`
-- Track B 코드: `track_B/mu_sigma_estimate.ipynb`, `mu_revise.ipynb`, `alpha_estimate.ipynb`, `jeonsae_ratio.ipynb`, `trackB_final.ipynb`
-- 서비스: `streamlit/scam_streamlit.py` (Streamlit 웹 서비스 + PDF 리포트 생성)
+- 발표자료(PDF, 64p): [`docs/발표자료.pdf`](./docs/발표자료.pdf)
+- 실제 생성 리포트 샘플: [`docs/전세위험도_평가보고서_샘플.pdf`](./docs/전세위험도_평가보고서_샘플.pdf)
+- Track A 코드: [`code/track_A/헤도닉_모델.ipynb`](./code/track_A/헤도닉_모델.ipynb), [`WoE_로지스틱_회귀.ipynb`](./code/track_A/WoE_로지스틱_회귀.ipynb), [`경매_라벨링.ipynb`](./code/track_A/경매_라벨링.ipynb), [`파생변수_생성.ipynb`](./code/track_A/파생변수_생성.ipynb), 전처리 원본 데이터: [`code/track_A/data/`](./code/track_A/data)
+- Track B 코드: [`code/track_B/`](./code/track_B) — 01_mu_sigma_estimate → 02_mu_revise → 03_alpha_estimate → 04_jeonsae_ratio → 05_trackB_final → 06_trackB_validation 순으로 실행
+- 서비스: [`code/streamlit/scam_streamlit.py`](./code/streamlit/scam_streamlit.py) (Streamlit 웹 서비스 + PDF 리포트 생성)
